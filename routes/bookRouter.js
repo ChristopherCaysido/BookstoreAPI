@@ -1,6 +1,6 @@
 const {Router} = require("express")
 
-bookRouter = Router()
+const bookRouter = Router()
 
 bookRouter.get("/",(req,res)=>{res.send("All books")})
 
@@ -16,3 +16,5 @@ bookRouter.get("/:bookId/reserve", (req,res)=>{
 bookRouter.post("/:bookId/reserve", (req,res)=>{
     res.send("Book has been reserved")
 })
+
+module.exports = bookRouter

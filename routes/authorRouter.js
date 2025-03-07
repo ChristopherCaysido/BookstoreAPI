@@ -11,3 +11,4 @@ authorRouter.get("/:authorId",(req,res)=>{
     res.send(`Author ID: ${authorId}`)
 })
 
+module.exports = authorRouter
